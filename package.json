@@ -1,0 +1,20 @@
+{
+    "name": "heyreed-now",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build && cp dist/index.html dist/404.html",
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.12",
+        "gh-pages": "^6.1.1",
+        "sass": "^1.70.0",
+        "typescript": "^5.2.2",
+        "vite": "^5.0.8"
+    }
+}
